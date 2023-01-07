@@ -8,17 +8,25 @@ export default function Navbar() {
       </div>
       <div className="flex-1 px-2 mx-2">
         <div className="items-stretch hidden lg:flex">
-          <a className="btn btn-ghost btn-sm rounded-btn">Home</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">Portfolio</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">About</a>
-          <a className="btn btn-ghost btn-sm rounded-btn">Contact</a>
+          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+            Home
+          </a>
+          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+            Portfolio
+          </a>
+          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+            About
+          </a>
+          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+            Contact
+          </a>
         </div>
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
           <GithubIcon
             className={`fill-gray-300 hover:fill-white`}
-            onClick={() => window.open("https://github.com/ImVispo")}
+            onClick={() => window.open("https://github.com/diegogarciacs")}
           />
         </button>
       </div>
