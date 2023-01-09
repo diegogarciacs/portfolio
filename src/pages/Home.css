@@ -1,0 +1,52 @@
+
+.gradient-text {
+    color: transparent;
+    background: conic-gradient(
+            #1FD65F 12%,
+            #44E47C 12%, #44E47C 33%,
+            #1F95D6 33%, #1F95D6 55%,
+            #D61F96 55%, #D61F96 70%,
+            #1FD6BB 70%, #1FD6BB 87%,
+            #17E882 87%);
+    background-size: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: expand-rev 0.5s ease forwards;
+
+    cursor: default;
+}
+
+.gradient-text:hover {
+    animation: expand 0.5s ease forwards;
+}
+
+@keyframes expand {
+    0% {
+        background-size: 50%;
+        background-position: 0 0;
+    }
+    20% {
+        background-size: 55%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 570%;
+        background-position: -8.8em -4em;
+    }
+}
+
+@keyframes expand-rev {
+    0% {
+        background-size: 325%;
+        background-position: -10em -4em;
+    }
+    20% {
+        background-size: 55%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 50%;
+        background-position: 0 0;
+    }
+}
