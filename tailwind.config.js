@@ -9,6 +9,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("tailwindcss-font-inter"),
     require("daisyui"),
+    require("prettier-plugin-tailwindcss"),
     // ...
   ],
 };

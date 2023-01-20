@@ -6,3 +6,8 @@
 body {
     @apply bg-neutral;
 }
+
+:root {
+    --transform-speed: 250ms;
+}
+
