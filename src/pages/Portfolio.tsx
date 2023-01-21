@@ -18,7 +18,7 @@ let data: Card[] = [
     link: "diegogaric.s",
   },
   {
-    id: 1,
+    id: 2,
     title: "BeachHacks 2023",
     content:
       "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile form." +
@@ -28,7 +28,17 @@ let data: Card[] = [
     link: "https://beachhacks.com",
   },
   {
-    id: 2,
+    id: 3,
+    title: "BeachHacks 2023",
+    content:
+      "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile form." +
+      " The website is" +
+      " built with CSS, and TypeScript.",
+    image: "https://i.imgur.com/example.jpg",
+    link: "https://beachhacks.com",
+  },
+  {
+    id: 4,
     title: "Beachhacks 2022",
     content:
       "Created a header component in Beachhacks 6.0 for the front-end website using React and Grommet.io." +
@@ -37,7 +47,7 @@ let data: Card[] = [
     link: "https://beachhacks.com",
   },
   {
-    id: 3,
+    id: 5,
     title: "Pokemon Console Game 2022",
     content:
       "Developed a console-based Pokemon game that adhered to design patterns such as Factory and Decorator in Java.",
@@ -50,8 +60,8 @@ const CardComponent = ({ title, content, link }: Card) => (
     <div className="card-body">
       <h2 className="card-title text-xl	">{title}</h2>
       <p className="text-base">{content}</p>
-      <div className="card-actions justify-end">
-        <button className="btn btn-secondary ">
+      <div className="card-actions justify-center ">
+        <button className="btn btn-outline btn-secondary btn-wide ">
           <a href={link}>Link</a>
         </button>
       </div>
@@ -61,9 +71,9 @@ const CardComponent = ({ title, content, link }: Card) => (
 
 const CardList = () => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex basis-2 flex-wrap justify-center">
       {data.map((card, index) => (
-        <div className="gap-3 overflow-x-auto" key={index}>
+        <div className="gap-3 " key={index}>
           <CardComponent {...card} />
         </div>
       ))}
@@ -74,9 +84,9 @@ const CardList = () => {
 export default function Portfolio() {
   return (
     <>
-      <div className="min-h-[55vh] bg-base-300">
-        <section>
-          <div className="layout py-6 text-center font-bold text-6xl">
+      <div className="min-h-64 bg-neutral">
+        <section className="mx-auto flex w-1/2 justify-center text-center">
+          <div className="layout border-b-2 border-b-emerald-800/50 py-6 text-center font-bold text-5xl">
             <h1>Some Things I've Built.</h1>
           </div>
         </section>

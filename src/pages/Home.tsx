@@ -3,7 +3,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <div className="hero min-h-[45vh] bg-base-300">
+      <div className="hero min-h-[55vh] bg-base-300">
         <div className="hero-content flex-col gap-[2rem] lg:flex-row">
           <div className="person relative w-auto lg:mt-[-6rem]">
             <div className="person_container ease  group grid aspect-[1/1.35] items-end overflow-hidden rounded-b-[100vw] transition duration-[var(--transform-speed)] hover:scale-[1.1]">
