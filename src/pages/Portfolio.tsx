@@ -1,4 +1,11 @@
-import { TailwindIcon } from "../components/Icons";
+import {
+  TailwindIcon,
+  JavaIcon,
+  TypescriptIcon,
+  CSSIcon,
+  ReactIcon,
+} from "../components/Icons";
+import React from "react";
 
 interface Card {
   id: number;
@@ -6,6 +13,7 @@ interface Card {
   content: string;
   image: string;
   link: string;
+  svgImages: JSX.Element[];
 }
 
 let data: Card[] = [
@@ -16,6 +24,11 @@ let data: Card[] = [
       "My personal portfolio website. I built this website using TypeScript, TailwindCSS, and lots of love.",
     image: "/images/portfolio.png",
     link: "diegogaric.s",
+    svgImages: [
+      <TailwindIcon className="h-12 w-12 fill-gray-300 md:w-8" />,
+      <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
+      <TypescriptIcon className="w-12 fill-gray-300 md:w-8" />,
+    ],
   },
   {
     id: 2,
@@ -26,6 +39,16 @@ let data: Card[] = [
       " built with CSS, and TypeScript.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
+    svgImages: [<CSSIcon />, <TypescriptIcon />],
+  },
+  {
+    id: 3,
+    title: "Liberty Mutual Insurance TechStart Internship 2022",
+    content:
+      "Created an in-house full-stack web application that displayed user virtual machine information using React.js and Express.js and Node.js.",
+    image: "https://i.imgur.com/example.jpg",
+    link: "https://www.libertymutual.com",
+    svgImages: [<ReactIcon />, <JavaIcon />],
   },
   {
     id: 3,
@@ -36,6 +59,7 @@ let data: Card[] = [
       " built with CSS, and TypeScript.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
+    svgImages: [<CSSIcon />, <ReactIcon />],
   },
   {
     id: 4,
@@ -45,6 +69,7 @@ let data: Card[] = [
       " Collaborated with 10+ student's to ensure all other components are functional and scalable.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
+    svgImages: [<TailwindIcon />, <CSSIcon />, <TypescriptIcon />],
   },
   {
     id: 5,
@@ -53,17 +78,22 @@ let data: Card[] = [
       "Developed a console-based Pokemon game that adhered to design patterns such as Factory and Decorator in Java.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://github.com/diegogarciacs/CECS-277/tree/main/Project%202",
+    svgImages: [<TailwindIcon />, <CSSIcon />, <TypescriptIcon />],
   },
 ];
-const CardComponent = ({ title, content, link }: Card) => (
+const CardComponent = ({ title, content, link, svgImages }: Card) => (
   <div className="card m-5 h-80 w-fit bg-base-100 shadow-xl hover:bg-base-content/5 sm:w-96">
     <div className="card-body">
       <h2 className="card-title text-xl	">{title}</h2>
       <p className="text-base">{content}</p>
-      <div className="card-actions justify-center ">
-        <button className="btn btn-outline btn-secondary btn-wide ">
+      <div className="justify-left card-actions ">
+        <button className="btn btn-outline btn-secondary ">
           <a href={link}>Link</a>
         </button>
+        {/*  <div className="card-images w-auto">*/}
+        {/*    {svgImages.map((svg, i) => (*/}
+        {/*      <div key={i}>{svg}</div>*/}
+        {/*    ))}*/}
       </div>
     </div>
   </div>
@@ -71,7 +101,7 @@ const CardComponent = ({ title, content, link }: Card) => (
 
 const CardList = () => {
   return (
-    <div className="flex basis-2 flex-wrap justify-center">
+    <div className="flex basis-3/4 flex-wrap justify-center ">
       {data.map((card, index) => (
         <div className="gap-3 " key={index}>
           <CardComponent {...card} />
@@ -86,11 +116,13 @@ export default function Portfolio() {
     <>
       <div className="min-h-64 bg-neutral">
         <section className="mx-auto flex w-1/2 justify-center text-center">
-          <div className="layout border-b-2 border-b-emerald-800/50 py-6 text-center font-bold text-5xl">
+          <div className="layout py-6 text-center font-bold text-5xl">
             <h1>Some Things I've Built.</h1>
           </div>
         </section>
-        <CardList />
+        <div className="cardlist_container flex justify-center">
+          <CardList />
+        </div>
       </div>
     </>
   );
