@@ -25,7 +25,10 @@ let data: Card[] = [
     image: "/images/portfolio.png",
     link: "diegogaric.s",
     svgImages: [
-      <TailwindIcon className="h-12 w-12 fill-gray-300 md:w-8" />,
+      <TailwindIcon
+        className="h-12 w-12 fill-gray-300 md:w-8"
+        color="bg-[#07B6D5]"
+      />,
       <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
       <TypescriptIcon className="w-12 fill-gray-300 md:w-8" />,
     ],
@@ -39,7 +42,10 @@ let data: Card[] = [
       " built with CSS, and TypeScript.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
-    svgImages: [<CSSIcon />, <TypescriptIcon />],
+    svgImages: [
+      <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
+      <TypescriptIcon className="w-12 fill-gray-300 md:w-8" />,
+    ],
   },
   {
     id: 3,
@@ -48,7 +54,10 @@ let data: Card[] = [
       "Created an in-house full-stack web application that displayed user virtual machine information using React.js and Express.js and Node.js.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://www.libertymutual.com",
-    svgImages: [<ReactIcon />, <JavaIcon />],
+    svgImages: [
+      <ReactIcon className="w-12 md:w-8" />,
+      <JavaIcon className="w-12 fill-gray-300  md:w-8" />,
+    ],
   },
   {
     id: 3,
@@ -59,7 +68,10 @@ let data: Card[] = [
       " built with CSS, and TypeScript.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
-    svgImages: [<CSSIcon />, <ReactIcon />],
+    svgImages: [
+      <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
+      <ReactIcon className="w-12 fill-gray-300  md:w-8" />,
+    ],
   },
   {
     id: 4,
@@ -69,7 +81,11 @@ let data: Card[] = [
       " Collaborated with 10+ student's to ensure all other components are functional and scalable.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://beachhacks.com",
-    svgImages: [<TailwindIcon />, <CSSIcon />, <TypescriptIcon />],
+    svgImages: [
+      <TailwindIcon className="w-12 fill-gray-300  md:w-8" />,
+      <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
+      <TypescriptIcon className="w-12 fill-gray-300  md:w-8" />,
+    ],
   },
   {
     id: 5,
@@ -78,7 +94,11 @@ let data: Card[] = [
       "Developed a console-based Pokemon game that adhered to design patterns such as Factory and Decorator in Java.",
     image: "https://i.imgur.com/example.jpg",
     link: "https://github.com/diegogarciacs/CECS-277/tree/main/Project%202",
-    svgImages: [<TailwindIcon />, <CSSIcon />, <TypescriptIcon />],
+    svgImages: [
+      <TailwindIcon className="w-12 fill-gray-300  md:w-8" />,
+      <CSSIcon className="w-12 fill-gray-300  md:w-8" />,
+      <TypescriptIcon className="w-12 fill-gray-300  md:w-8" />,
+    ],
   },
 ];
 const CardComponent = ({ title, content, link, svgImages }: Card) => (
@@ -86,14 +106,16 @@ const CardComponent = ({ title, content, link, svgImages }: Card) => (
     <div className="card-body">
       <h2 className="card-title text-xl	">{title}</h2>
       <p className="text-base">{content}</p>
-      <div className="justify-left card-actions ">
+      <div className="card-actions">
         <button className="btn btn-outline btn-secondary ">
           <a href={link}>Link</a>
         </button>
-        {/*  <div className="card-images w-auto">*/}
-        {/*    {svgImages.map((svg, i) => (*/}
-        {/*      <div key={i}>{svg}</div>*/}
-        {/*    ))}*/}
+        <div className="mx-2 flex-1 px-2"></div>
+        <div className="card-images flex w-auto flex-none items-center self-center">
+          {svgImages.map((svg, i) => (
+            <div key={i}>{svg}</div>
+          ))}
+        </div>
       </div>
     </div>
   </div>
@@ -101,7 +123,7 @@ const CardComponent = ({ title, content, link, svgImages }: Card) => (
 
 const CardList = () => {
   return (
-    <div className="flex basis-3/4 flex-wrap justify-center ">
+    <div className="flex basis-3/4 flex-wrap justify-center 2xl:basis-1/2 ">
       {data.map((card, index) => (
         <div className="gap-3 " key={index}>
           <CardComponent {...card} />
