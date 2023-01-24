@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -10,14 +9,13 @@ import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div className="App" data-theme={"forest"}>
+    <div className='App' data-theme={"forest"}>
       <Router>
         <Navbar />
-        <Home></Home>
-        <Portfolio></Portfolio>
-        <Technologies></Technologies>
+        <Home />
+        <Portfolio />
+        <Technologies />
         <Footer />
-        <Routes></Routes>
       </Router>
     </div>
   );
