@@ -47,19 +47,6 @@ const cardData: any = [
     ],
   },
   {
-    title: "BeachHacks 2023",
-    content:
-      "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile form." +
-      " The website is" +
-      " built with CSS, and TypeScript.",
-    image: "https://i.imgur.com/example.jpg",
-    link: "https://beachhacks.com",
-    svgImages: [
-      <CSSIcon className='w-12 fill-gray-300  md:w-8' />,
-      <ReactIcon className='w-12 fill-gray-300  md:w-8' />,
-    ],
-  },
-  {
     title: "Beachhacks 2022",
     content:
       "Created a header component in Beachhacks 6.0 for the front-end website using React and Grommet.io." +
