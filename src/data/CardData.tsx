@@ -8,7 +8,6 @@ import {
 
 const cardData: any = [
   {
-    id: 0,
     title: "Portfolio",
     content:
       "My personal portfolio website. I built this website using TypeScript, TailwindCSS, and lots of love.",
@@ -24,7 +23,6 @@ const cardData: any = [
     ],
   },
   {
-    id: 2,
     title: "BeachHacks 2023",
     content:
       "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile form." +
@@ -38,7 +36,6 @@ const cardData: any = [
     ],
   },
   {
-    id: 3,
     title: "Liberty Mutual Insurance TechStart Internship 2022",
     content:
       "Created an in-house full-stack web application that displayed user virtual machine information using React.js and Express.js and Node.js.",
@@ -50,7 +47,6 @@ const cardData: any = [
     ],
   },
   {
-    id: 3,
     title: "BeachHacks 2023",
     content:
       "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile form." +
@@ -64,7 +60,6 @@ const cardData: any = [
     ],
   },
   {
-    id: 4,
     title: "Beachhacks 2022",
     content:
       "Created a header component in Beachhacks 6.0 for the front-end website using React and Grommet.io." +
@@ -78,7 +73,6 @@ const cardData: any = [
     ],
   },
   {
-    id: 5,
     title: "Pokemon Console Game 2022",
     content:
       "Developed a console-based Pokemon game that adhered to design patterns such as Factory and Decorator in Java.",
