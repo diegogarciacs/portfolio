@@ -31,9 +31,9 @@ const AboutMe = () => {
             >
               BeachHacks 2023
             </a>
-            , and finally building my portfolio to a place I'm content with.
-            <br /> My goal is to become a full-stack developer and work on
-            projects that I'm passionate about.
+            , and finally building my own portfolio.
+            <br /> My goal is to become a full-stack developer and continue to
+            work on projects that I'm passionate about.
           </p>
         </div>
       </div>
