@@ -11,3 +11,6 @@ body {
     --transform-speed: 250ms;
 }
 
+html {
+    scroll-behavior: smooth;
+}

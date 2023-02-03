@@ -31,13 +31,22 @@
             #1FD6BB 70%, #1FD6BB 87%,
             #17E882 87%
     );
-    animation: expand-rev2 0.5s ease forwards;
+    animation: rotate 15s linear infinite, expand-rev2 .5s ease forwards;
+
     cursor: default;
     background-size: 50%;
 }
 
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .person_circle:hover {
-    animation: expand2 0.5s ease forwards;
+    animation: expand2 .5s ease forwards, rotate 15s linear infinite;
+
 }
 
 @keyframes expand2 {
@@ -54,6 +63,8 @@
         background-position: -8rem -20rem;
 
     }
+
+
 }
 
 @keyframes expand-rev2 {

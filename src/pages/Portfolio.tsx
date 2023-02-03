@@ -1,15 +1,15 @@
-import CardList from "../components/Portfolio/CardList";
+import CardList from "../components/Cards/CardList";
 
 export default function Portfolio() {
   return (
     <>
-      <div className="min-h-64 bg-neutral">
+      <div className="min-h-64 flex flex-col bg-neutral " id="portfolio">
         <section className="mx-auto flex w-1/2 justify-center text-center">
-          <div className="layout py-6 text-center font-bold text-5xl">
+          <div className="layout py-6 text-center font-bold text-6xl">
             <h1>Some Things I've Built.</h1>
           </div>
         </section>
-        <div className="cardlist_container flex flex-wrap justify-center">
+        <div className="min-[2000px]w-1/2 flex flex-wrap justify-center place-self-center	">
           <CardList />
         </div>
       </div>

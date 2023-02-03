@@ -2,16 +2,16 @@ import { GithubIcon } from "./Icons";
 
 export default function Navbar() {
   return (
-    <div className="navbar rounded-box mb-2 bg-base-300 text-neutral-content shadow-lg">
+    <div className="navbar rounded-box bg-base-300 pb-4 text-neutral-content shadow-lg">
       <div className="mx-2 flex-none px-2">
         <span className="font-bold text-lg">Diego O. Garcia</span>
       </div>
       <div className="mx-2 flex-1 px-2">
         <div className="hidden items-stretch lg:flex">
-          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#home" className="btn btn-ghost btn-sm rounded-btn">
             Home
           </a>
-          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#portfolio" className="btn btn-ghost btn-sm rounded-btn">
             Portfolio
           </a>
           <a href="/" className="btn btn-ghost btn-sm rounded-btn">
