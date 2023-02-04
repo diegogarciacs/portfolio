@@ -14,7 +14,7 @@ export default function Navbar() {
           <a href="#portfolio" className="btn btn-ghost btn-sm rounded-btn">
             Portfolio
           </a>
-          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+          <a href="#about-me" className="btn btn-ghost btn-sm rounded-btn">
             About
           </a>
           <a href="/" className="btn btn-ghost btn-sm rounded-btn">

@@ -1,16 +1,46 @@
+import "./AboutMe.css";
+import React, { useEffect, useRef } from "react";
+
 const AboutMe = () => {
+  const aboutTextRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        // if we find the element is intersecting
+        if (entry.isIntersecting) {
+          // tag element with class
+          entry.target.classList.add("about-text");
+          // stop observing the element
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    // observe the element
+    if (aboutTextRef.current) {
+      observer.observe(aboutTextRef.current);
+    }
+    // clean up
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section
-      className="align mx-auto flex min-h-screen w-3/4 flex-col content-center justify-center bg-neutral pt-12"
+      className="align mx-auto flex min-h-screen w-3/4 flex-col content-center items-center	justify-center bg-neutral pt-12"
       id="about-me"
     >
       <div className="hero-content flex-col lg:flex-row">
-        <h1 className=" font-bold antialiased text-4xl sm:whitespace-nowrap sm:text-6xl">
+        <h1 className=" font-bold antialiased text-4xl sm:whitespace-nowrap sm:text-6xl	">
           More about me
         </h1>
         <div className="divider divider-horizontal"></div>
         <div>
-          <p className="py-6 antialiased text-2xl lg:text-3xl">
+          <p
+            className="about-text py-6 antialiased transition-transform text-2xl  lg:text-3xl"
+            ref={aboutTextRef}
+          >
             Hi! My name is Diego. I grew up playing video games and spending
             lots of time online. As I've aged I've discovered a love for coding
             and web development. I like to make things beautiful and functional
