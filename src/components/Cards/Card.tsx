@@ -20,7 +20,7 @@ const CardComponent = ({
       <h2 className="card-title text-2xl	">{title}</h2>
       <p className="text-base">{content}</p>
       <div className="card-actions">
-        <div className="card-images flex w-auto flex-none items-center gap-0.5 self-center">
+        <div className="card-images flex w-auto flex-none items-center gap-1 self-center">
           {svgImages.map((svg, i) => (
             <div key={i}>{svg}</div>
           ))}

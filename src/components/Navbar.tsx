@@ -17,7 +17,11 @@ export default function Navbar() {
           <a href="#about-me" className="btn btn-ghost btn-sm rounded-btn">
             About
           </a>
-          <a href="/" className="btn btn-ghost btn-sm rounded-btn">
+          <a
+            href="mailto:diegogar577@gmail.com"
+            target="_blank"
+            className="btn btn-ghost btn-sm rounded-btn"
+          >
             Contact
           </a>
         </div>

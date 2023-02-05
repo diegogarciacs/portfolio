@@ -9,7 +9,7 @@ export default function Portfolio() {
             <h1>Some Things I've Built.</h1>
           </div>
         </section>
-        <div className="min-[2000px]w-1/2 flex flex-wrap justify-center place-self-center	">
+        <div className="flex max-w-7xl flex-wrap justify-center place-self-center	">
           <CardList />
         </div>
       </div>

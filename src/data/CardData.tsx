@@ -33,8 +33,10 @@ const cardData: any = [
           <CSSIcon className="flex place-items-center justify-center bg-contain " />
         }
       </div>,
-      <div className={`flex place-items-center justify-center `}>
-        {<TailwindIcon className="h-10 w-10 fill-[#37BCF8] md:w-12 md:w-12" />}
+      <div
+        className={`flex h-[40px] w-[40px] place-items-center justify-center rounded-md`}
+      >
+        {<TailwindIcon className="" />}
       </div>,
     ],
     isPrivate: false,
@@ -97,8 +99,8 @@ const cardData: any = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
-        <GrommetIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
+      <div className="flex h-[40px] w-[40px] place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
+        <GrommetIcon className="flex h-[40px] w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
     ],
     isPrivate: true,
@@ -110,7 +112,7 @@ const cardData: any = [
     image: "https://i.imgur.com/example.jpg",
     link: "https://github.com/diegogarciacs/CECS-277/tree/main/Project%202",
     svgImages: [
-      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
+      <div className="flex h-[40px] w-[40px] place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <JavaIcon className="flex h-auto w-12 place-items-center justify-center rounded-md md:h-16 md:w-16 md:w-16" />
       </div>,
     ],
