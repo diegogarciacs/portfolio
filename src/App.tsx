@@ -11,14 +11,14 @@ import AboutMe from "./pages/AboutMe";
 function App() {
   return (
     <div className="App bg-neutral" data-theme={"forest"}>
-      <Router>
-        <Navbar />
-        <Home />
-        <Portfolio />
-        <AboutMe />
-        <Technologies />
-        <Footer />
-      </Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/technologies" element={<Technologies />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }
