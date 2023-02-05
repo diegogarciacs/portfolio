@@ -33,7 +33,7 @@ const AboutMe = () => {
     >
       <div className="hero-content flex-col lg:flex-row">
         <h1 className="font-bold antialiased text-4xl sm:whitespace-nowrap sm:text-6xl	">
-          More about me
+          More About Me
         </h1>
         <div className="divider divider-horizontal"></div>
         <div>
