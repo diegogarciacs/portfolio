@@ -2,6 +2,7 @@ import {
   ReactIcon,
   TypescriptIcon,
   JavaIcon,
+  PythonIcon,
   CSSIcon,
   TailwindIcon,
 } from "./Icons";
@@ -28,24 +29,47 @@ export default function Technologies() {
         " excited to use it in the future.",
       technologyIcon: TailwindIcon,
     },
+    {
+      name: "CSS",
+      description:
+        "I've used CSS for about 3 years and I've reached for it many times. It's a" +
+        " technology I've certainly gained an appreciation for over the years and still ise when" +
+        " doing more complex CSS.",
+      technologyIcon: CSSIcon,
+    },
+    {
+      name: "Python",
+      description:
+        "A personal favorite of mine which I've used for a variety of applications. I've used it for web scraping," +
+        " data analysis, and learning more about DSA. A definite go-to in terms of programming languages for me.",
+      technologyIcon: PythonIcon,
+    },
+    {
+      name: "Java",
+      description:
+        "I've used Java for about 2 years and it was actually my first programming language. I've used it for a" +
+        " variety of purposes, mainly when learning more about object oriented programming. I'm interested in" +
+        " using it for backend development in the future.",
+      technologyIcon: JavaIcon,
+    },
   ];
   return (
     <section
       className="min-h-64 mx-auto my-20 flex w-3/4 max-w-7xl flex-col bg-neutral"
       id="technologies"
     >
-      <div className="layout py-6 text-center font-bold text-6xl">
+      <div className="layout py-8 text-center font-bold text-5xl sm:text-6xl">
         <h1>Technologies I enjoy.</h1>
       </div>
-      <div className=" grid grid-cols-1 gap-4 px-4 lg:grid-cols-2">
+      <div className=" grid grid-cols-1 gap-4 lg:grid-cols-2">
         {people.map((person) => (
           <div
             key={person.name}
-            className="relative flex items-center justify-center space-x-3 rounded-lg
-            bg-base-100 px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2
-            hover:border-gray-400"
+            className="relative flex items-center justify-center space-x-3 rounded-lg bg-base-100
+            px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400
+            sm:flex-row"
           >
-            <div className="h-10 w-10 flex-shrink-0 rounded-full">
+            <div className="flex h-10 w-10 flex-shrink-0  items-center justify-center rounded-full align-middle sm:w-12">
               <person.technologyIcon />
             </div>
             <div className="min-w-0 flex-1">
