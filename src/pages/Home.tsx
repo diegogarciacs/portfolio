@@ -15,7 +15,7 @@ export default function Home() {
               ></div>
               <img
                 className="person_img z-2 shadow-3xl group-hover:scale[1.1] ease duration-[calc(var(--transform-speed) *	1.12)] pointer-events-none relative left-[1rem] scale-[1.2] transition group-hover:translate-y-[-1.4rem] sm:w-[20rem] lg:w-[25rem]"
-                src="../../public/images/diego-transparent.png"
+                src="/images/diego-transparent.png"
                 alt="diego smiling"
               />
             </div>
