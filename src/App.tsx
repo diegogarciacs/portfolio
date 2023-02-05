@@ -9,18 +9,16 @@ import AboutMe from "./pages/AboutMe";
 // import Home from "./pages/Home";
 
 function App() {
-  return (
-    <div className="App bg-neutral" data-theme={"forest"}>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/technologies" element={<Technologies />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+    return (
+            <div className="App bg-neutral" data-theme={"forest"}>
+                <Navbar />
+                   <Home />
+                    <Portfolio />
+                    <AboutMe />
+                   <Technologies />
+                <Footer />
+            </div>
+    );
 }
 
 export default App;
