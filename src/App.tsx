@@ -6,7 +6,6 @@ import Portfolio from "./pages/Portfolio";
 import Technologies from "./components/Technologies";
 import AboutMe from "./pages/AboutMe";
 
-// import Home from "./pages/Home";
 
 function App() {
     return (
