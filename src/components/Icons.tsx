@@ -11,7 +11,7 @@ export const GithubIcon = (props: any) => (
 );
 
 export const CSSIcon = (props: any) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" height='100%' width='100%' {...props}>
     <path
       fill="#1572B6"
       d="M18.814 114.123 8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
@@ -39,12 +39,14 @@ export const CSSIcon = (props: any) => (
   </svg>
 );
 export const GrommetIcon = (props: any) => (
-  <svg viewBox="0 0 24 24">
+  <svg viewBox="0 0 24 24" width='100%'
+       height='100%'>
     <path
       fill="none"
       stroke="#865CD6"
       strokeWidth="4"
       d="M12 2C6.485 2 2 6.485 2 12s4.485 10 10 10 10-4.485 10-10S17.515 2 12 2z"
+
     />
   </svg>
 );
@@ -65,6 +67,8 @@ export const ExpressIcon = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
     baseProfile="basic"
     viewBox="0 0 64 64"
+    height="100%"
+    width="100%"
   >
     <linearGradient
       id="a"
@@ -162,10 +166,10 @@ export const ClickIcon = (props: any) => (
 );
 
 export const TypescriptIcon = (props: any) => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height='100%' width='100%' {...props}>
     <image
-      width="24"
-      height="24"
+      width="100%"
+      height="100%"
       href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAAELCAYAAADOVaNSAAAM2UlEQVR4nO3dT4hV5xnH8dc21ExResVisER0GiiMMKAu7cJJsussVLpsIApZDqhgNm506DKFUXAZiIG6FOPCpVYXmZU4FsEBwc5IioPSkBsisZEWy+94T3tzOzM+M973fZ/3nO8HBtskzD/nfuc9zznnPRvCqVsvAgC8wk/4BgGwIBYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAwIRYATIgFABNiAcCEWAAweYNvE9qs8+ZPw57tPw8HRjdVf3ZGXv5//XOLxW+eh8XuD9V/eWfpWeg++1e4ufC0+mf6d02yIZy69aItPyt/+eg3r/0+1vKDFFP/D6lnJ67+PdxZ+t7VZ7hry8/CobFOOLi7EyZGN0f7OPo7urHwXbgy3w1f3OtG+ziptGZloR+QmD8Yqenr0Zt3HsIaep/HkX1bw4f7tlbBT0F/P0e2bK0+bvef/66C8fntr6uAlKg9sehsdPBZIDW9YI/tf6t6weYMVx0rvSkW09eWiosGMws0kl6cx/ZvC2fe/5W7L08r3ImPNhcXDWKBxtFv75nJHW4OgVZSR+Ps7JMwfe1RdajiGadO0RiKg4bYn/1+l/tQ9Du+f1uYm9qdbJayXsQCjaAX2sLH48UOsTVbmZsaq1ZFXhELFE8vML3QSlpNrESrIh1CeUQsUDSFQi+wJtFhiceviVigWE0MRc3j10YsUKQmh6Lm7WtsTSx07T+aQcPMpoeiVl/I5QErC0Q17EvSNcS8/Id3WvWXpjB6OMtDLBDVzs5wY6EXTgn3xAzb5Q/eyf51EwsUQ79dD+3utPIvzMOKiligGG2ZU6xEs5rT723P9vGJBYqgIV8bDz8G6ca4XPMLYoEinH7P392jucxMvp3lIxMLuMeq4sdy7brFLepwT/tS4OU2fUcvLWbb/4JYwDWtKHLcul3vn/nXpe+rjXgH7dk+EnZu2Rgmehv9xqbVhEKRc8+L1sTiYfe5mx2JYm/6qx8oL5vk6vv+OrSxbkrW3av6/33Mrfv0d6lIeNjwt1W7e3uhDVpiTrT1g/zup/dL+7YsS7eep/jNPYwXpUKh07vDuhbEw2qiHwNOuFU/0yM2vRgV19f97a33c/jig+oFPoz3ozdPW+0xs4BbqWYVh//8YKiHbRduf139uZ6LyLytJvoRC7iV4k7hC5Ge47HWYHiaTayEWMCtzkj8H8/p64+ivW8FQzfSvepxBJ5XE/2YWcAtnZ6MSYcesZ9HOn19acVDHH1sj7OJlRALtNaNhadJvvTlYqBnhew9f6+oZ6ASC7SWnnieQn3lZeitZnTm5cTVr4pYTfRjZoHWuploZRF6cwlFotSHIgdWFkA6JYciEAu0WewBatMQC7TWLxrwBLOUiAVaq637ea4XsUBr6XJyNtWxIxZwa7l9JIaN7frsiAXcSnEdhPagyLG5TomIBdz6NtFFS3oeR8zNiJqCWMCtFIchobfTlTYkIhirIxZwa7H7Q7JPTYcic1O7OSRZBbGAW7qnIvZdof20wtA2fnrqF6uM/0cs4FqOS6S1/4RWGRp+4n+IBVz7vLfjVGpaZWiXK600cj0u0BtiAde0skh5KDJIMwwNPxdOjrd+pUEs4N6F2//I/inWK406Gm2caRALuHdu9ombjWL+G42Px8PM5I5WXS5OLOCeQnH2y8euPk2tLI7v31atNBSPNsw1iAWK4Gl1MUiHJZpraBja5LkGsUARFIrpa/G27R8GDUPruYZWHU2baxALFEM7Ynt54PNqNMfQPENzjSZd4EUsUJSjlx4W8+kqErrAqynRIBYoilYWZ5wfjgxqSjSIBYqjp3yVuFN26dEgFijSsJ98nlJ/NDQILQWxQJF0dkQP7Sk1GKEXjWoQenK8iOs0iAWK1YRghL7Nd7Rjl+crQokFitaUYITeowl0a7zXQxNigeLVwSj98YCh79DE4zZ/xAKNUAdDF241gWYYGoB6mmUQCzTKiatfhcMXH7i9j2QttLLQCkOnWT0gFmicL+51w+gndxtxWBJ62/zpnpPciAUaqT4sacoqQ3ez5g4GsUCj1auMJswycgeDWKDxtLLQLGP0T3fDhUwbAA9LzmAQC7SGNv49emmx+NOsCkaOoSexQOsoFApGydHQ0DP1aVVigdaqo1Hq4cnlD9I+0JlYoPXqwxNF46zjvT4HKRQp5xfEAuhRNKpB6Cd3qz9zPtzISveTpDocIRbAgOrRA7NPqpWGVhze5xqn308z7CQWwCo0y9BcY+/5ebdzDa0sUqwuiAVgoFvg67mG9gD1Ntc4luC2dmIBrIHmGNoDVHMNT9HQ7CL2xjnEAliH6qFH15fClj/eqVYcHoahh8Y6Ud8/sQBek2YZHg5PPoz86ERiAQxJ/+FJDnp8YsxDEWIBDFF9eKKzJzn2BY15VoRYABEoFApG6lvjDxALoEy6ElQD0FT2bB+J9pGIBRCZBqCKRgqaW8RCLIAEdDiS6rLxWHMLYgEkkvJwJAZiASSiC7e0J2hsB0Y3RfkIxAJI6Mp8/FjEQizQCNoIRvdHeFfCHhkrIRYonjaw1aP+9BRy78FIMeSMdUaEWKBYmvrPTY1VW8vVe1H2/++26ozE+fqJBYqj+x8UBT0HdPC3aOp9KT3qPotzMxuxQDEUAj0vY25qd3XosRIdihxPsBnMesTecyL0LjWP4Y3onzkwBArAzO92mF9sM5M7wmI3zanKtdjV2ejq81kLYgHXdJgxM/n2uq5K1OHI4jf3s9z9uZKDBZyxWQmHIXCpnj1ogLney5f1Ppaba+QUezcrubnwNMr7JRZwR3MJnQpdbS5h5SkY+npSzCxiIRZwQyuIhZPj1XM8h3n6sw5GzmswFAnNUVKIdS0HsUB2eiHpxay3WL95FQxdtJXjLEn9sVNc/xFzPkMskFV1yHFyPNkj+PTbPdULN/QGtDrVm+ow6M7Ss2jvm1ggG60idMiRmg5HNBNRqGJGQ+8/5mppOTcjXk5OLJCNbqrKtRO2IqFQKRpabQzrN7/eb3WvSoTZi0XM60q4zgJZnZt9Eo7s+2W2swR6MWuOobdqv4n5bvXbWcf+1jtEFRrtfXlwrJN1iKpQxHxuCbFAVvrh1g5SWq7npmDV4ajVZxZ0v0U9PFQc6pu1Us1aLGLvlUEskJ1ekNqj0uP9HP0x8Hz7u6Ib+ynvzCzgwvS1R0VvDJPb2S8fR/8MiAVc0G/Gwxcf8JexDvrenUvwMCNiATc0E8h1dqRk04keyEws4IqeE+rttnLPFNhUj0gkFnBHZ0c83Vbu2dFLD5N9dsQC7mhJ/e6n95MsrUumRyKmjCqxgEsEY3U6TZr6Ce3EAm7pt+be8/c4JBmg70eqBy33IxZwTddeaIVBMF7S9yHXiotYwD29MPaen0++7PYmZygCsUBJtPTWhVttnGNoRpF7hkMsUBRdg6E5RorHAHqhSOp0cu5IEgsUp55jaJXR5PtJ9LV5OvwiFihWvco4k+hy55T0NXk7E8Qt6iiaIqFLxHUj1THtRfHbt4p+MLJmE9PXfd6BSyzQCIPRyLn71np4jkSNWKBR6mjoTXth5t7qbjX1Nn7nZh8XMXshFmgs/bbWmw5LFAwP4VDMNGvRFnil3V27IZy69cLB59Eq+o23sxNvifyw+zz6FmulUjgmfr05HBjdHCZGNyV5nodO897423fhyvy3RV+JSizQetpnU/MNBXzXlo0/mnVYN+Qd3NhXwdYDf5p0mTqHIWi96oW+0PbvwqtxnQUAE2IBwIRYADAhFgBMiAUAE2IBwIRYADAhFgBMiAUAE2IBwIRYADAhFgBMiAUAE2IBwIRYADAhFgBMiAUAE2IBwIRYADAhFgBMiAWAVwsh/AfVP67vF/zKSgAAAABJRU5ErkJggg=="
     />
   </svg>
@@ -186,9 +190,11 @@ export const JavascriptIcon = (props: any) => (
 
 export const ReactIcon = (props: any) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
+      xmlns="http://www.w3.org/2000/svg"
     viewBox="-11.5 -10.23174 23 20.46348"
-    {...props}
+        heigth='100%'
+        width='100%'
+      {...props}
   >
     <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
     <g stroke="#61dafb" strokeWidth="1" fill="none">
@@ -334,6 +340,8 @@ export const TailwindIcon = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
     viewBox="0 0 256 153.6"
+    height='100%'
+    width='100%'
   >
     <linearGradient id="a" x1="-2.778%" y1="32%" y2="67.556%">
       <stop offset="0" stop-color="#2298bd" />

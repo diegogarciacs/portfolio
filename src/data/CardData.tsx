@@ -13,7 +13,7 @@ const cardData: any = [
   {
     title: "Portfolio",
     content:
-      "My personal portfolio website. I built this website using TypeScript, TailwindCSS, and lots of love." +
+      "My personal portfolio website. I built this website using TypeScript, TailwindCSS, React, and lots of love." +
       "" +
       "",
     image: "/images/portfolio.png",
@@ -22,21 +22,15 @@ const cardData: any = [
       <div
         className={"flex place-items-center justify-center  md:h-10 md:w-10"}
       >
-        {<TypescriptIcon className="w-10 fill-[gray-300] " />}
+        {<TypescriptIcon className="w-10 fill-[gray-300] rounded" />}
+      </div>,
+      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
+        <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
       <div
-        className={
-          "flex place-items-center justify-center  md:h-[40px] md:w-[40px]"
-        }
+        className={`flex h-[40px] w-[40px] place-items-center justify-center`}
       >
-        {
-          <CSSIcon className="flex place-items-center justify-center bg-contain " />
-        }
-      </div>,
-      <div
-        className={`flex h-[40px] w-[40px] place-items-center justify-center rounded-md`}
-      >
-        {<TailwindIcon className="" />}
+        {<TailwindIcon />}
       </div>,
     ],
     isPrivate: false,
@@ -52,16 +46,16 @@ const cardData: any = [
     link: "https://beachhacks.com",
     svgImages: [
       <div
-        className={
-          "flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]"
-        }
+          className={"flex place-items-center justify-center  md:h-10 md:w-10"}
       >
-        {<TypescriptIcon className="w-10 fill-[gray-300] md:h-12 md:w-12" />}
+        {<TypescriptIcon className="w-10 fill-[gray-300] rounded" />}
       </div>,
-      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
-        {
-          <CSSIcon className="flex place-items-center justify-center bg-contain " />
-        }
+      <div
+          className={
+            "flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]"
+          }
+      >
+        {<CSSIcon className="w-10 fill-[gray-300] md:h-12 md:w-12" />}
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
@@ -80,7 +74,7 @@ const cardData: any = [
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
-        <ExpressIcon className="h-auto w-12 fill-gray-300  md:w-8" />
+        <ExpressIcon className="h-auto w-12 fill-gray-300 md:h-auto md:w-8" />
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <NodeJSIcon className="h-auto w-12 fill-gray-300  md:w-8" />
@@ -99,8 +93,8 @@ const cardData: any = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex h-[40px] w-[40px] place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
-        <GrommetIcon className="flex h-[40px] w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
+      <div className="flex place-items-center justify-center  md:h-[40px] md:w-[40px]">
+        <GrommetIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
     ],
     isPrivate: true,
