@@ -73,8 +73,8 @@ const cardData: any = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
-        <ExpressIcon className="h-auto w-12 fill-gray-300 md:h-auto md:w-8" />
+      <div className="flex place-items-center justify-center rounded-md h-auto w-12 md:h-[40px] md:w-[40px]">
+        <ExpressIcon className="h-8 w-12 fill-gray-300 md:h-auto md:w-8" />
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <NodeJSIcon className="h-auto w-12 fill-gray-300  md:w-8" />
@@ -93,7 +93,7 @@ const cardData: any = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center  md:h-[40px] md:w-[40px]">
+      <div className="flex place-items-center justify-center h-auto w-12 md:h-[40px] md:w-[40px]">
         <GrommetIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
     ],
