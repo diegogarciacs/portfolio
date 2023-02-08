@@ -9,15 +9,25 @@ import {
   GrommetIcon,
 } from "../components/Icons";
 
-const cardData: any = [
+interface CardData {
+  id: number;
+  title: string;
+  content: string;
+  image: string;
+  link: string;
+  svgImages: JSX.Element[];
+  isPrivate: boolean;
+}
+const cardData: CardData[] = [
   {
+    id: 1,
     title: "Portfolio",
     content:
       "My personal portfolio website. I built this website using TypeScript, TailwindCSS, React, and lots of love." +
       "" +
       "",
     image: "/images/portfolio.png",
-    link: "diegogar.cia",
+    link: "https://github.com/diegogarciacs/portfolio",
     svgImages: [
       <div
         className={"flex place-items-center justify-center  md:h-10 md:w-10"}
@@ -36,6 +46,7 @@ const cardData: any = [
     isPrivate: false,
   },
   {
+    id: 2,
     title: "BeachHacks 2023",
     content:
       "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile" +
@@ -61,8 +72,10 @@ const cardData: any = [
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
     ],
+    isPrivate: false,
   },
   {
+    id: 3,
     title: "Liberty Mutual Insurance TechStart Internship 2022",
     content:
       "Created an in-house full-stack web application that displayed user virtual machine information using" +
@@ -83,6 +96,7 @@ const cardData: any = [
     isPrivate: true,
   },
   {
+    id: 4,
     title: "Beachhacks 2022",
     content:
       "Created a header component in Beachhacks 6.0 for the front-end website using React and Grommet.io." +
@@ -100,6 +114,7 @@ const cardData: any = [
     isPrivate: true,
   },
   {
+    id: 5,
     title: "Pokemon Console Game 2022",
     content:
       "Developed a console-based Pokemon game that adhered to design patterns such as Factory and Decorator in Java.",
@@ -113,6 +128,7 @@ const cardData: any = [
     isPrivate: false,
   },
   {
+    id: 6,
     title: "Parkview Wellness 2019",
     content:
       "Designed a fully functional website (focusing on HTML and CSS) with a full stack developer." +
