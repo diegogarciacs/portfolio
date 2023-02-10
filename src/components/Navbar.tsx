@@ -3,7 +3,7 @@ import { GithubIcon } from "./Icons";
 export default function Navbar() {
   return (
     <div
-      className="navbar rounded-box bg-base-300 pb-4 text-neutral-content shadow-lg"
+      className="navbar bg-base-300 pb-4 text-neutral-content shadow-lg"
       id="navbar"
     >
       <div className="mx-2 flex-none px-2">
