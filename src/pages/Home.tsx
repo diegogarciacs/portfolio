@@ -2,8 +2,8 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <>
-      <div className="hero min-h-[76vh]	 bg-neutral" id="home">
+    <section id="home">
+      <div className="hero min-h-[76vh]	 bg-neutral" >
         <div className="hero-content flex-col gap-[2rem] lg:flex-row">
           <div className="person relative w-60 sm:w-auto lg:mt-[-6rem]">
             <div className="person_container ease  group grid sm:aspect-[1/1.35] items-end overflow-hidden rounded-b-[100vw] transition duration-[var(--transform-speed)] hover:scale-[1.1]">
@@ -36,6 +36,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

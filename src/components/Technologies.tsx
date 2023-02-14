@@ -58,14 +58,14 @@ export default function Technologies() {
       className="min-h-64 mx-auto my-20 flex w-3/4 max-w-7xl flex-col bg-neutral"
       id="technologies"
     >
-      <div className="layout py-8 text-center font-bold text-5xl sm:text-6xl">
+      <div className="layout py-8 text-center font-bold text-4xl sm:text-6xl">
         <h1>Technologies I enjoy.</h1>
       </div>
       <div className=" grid grid-cols-1 gap-4 lg:grid-cols-2">
         {techList.map((tech) => (
           <div
             key={tech.name}
-            className="relative flex items-center justify-center space-x-3 rounded-lg bg-base-100 shadow-xl hover:bg-base-content/5
+            className="relative flex items-center justify-center space-x-3 rounded-lg bg-base-100  drop-shadow-xl	 hover:bg-base-content/5
             px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400
             sm:flex-row"
           >

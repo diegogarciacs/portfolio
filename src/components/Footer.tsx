@@ -6,16 +6,14 @@ export default function Footer() {
     <footer className="footer footer-center rounded bg-base-300 p-10 text-base-content">
       <div>
         <div className="grid grid-flow-col gap-4">
-          <a className="link link-hover">
+          <a className="link link-hover" href="https://www.linkedin.com/in/diegogarciacs/" target="_blank" rel="noreferrer">
             <LinkedInIcon
               className={`fill-current hover:fill-white`}
-              onClick={() => window.open("https://github.com/diegogarciacs")}
             ></LinkedInIcon>
           </a>
-          <a className="link link-hover">
+          <a className="link link-hover " href="https://github.com/diegogarciacs" target="_blank" rel="noreferrer">
             <GithubIcon
               className={`fill-current hover:fill-white`}
-              onClick={() => window.open("https://github.com/diegogarciacs")}
             ></GithubIcon>
           </a>
         </div>
@@ -26,11 +24,12 @@ export default function Footer() {
       <a
         href="mailto:diegogar577@gmail.com"
         target="_blank"
+        rel="noreferrer"
         className="link-hover hover:text-primary-focus "
       >
         diegogar577@gmail.com
       </a>
-      <a href="#navbar" className="link-hover hover:text-primary-focus ">
+      <a href="#home" className="link-hover hover:text-primary-focus ">
         Back to top
       </a>
     </footer>
