@@ -6,17 +6,18 @@ import Portfolio from "./pages/Portfolio";
 import Technologies from "./components/Technologies";
 import AboutMe from "./pages/AboutMe";
 
-
 function App() {
+
+
     return (
-            <div className="App bg-neutral" data-theme={"forest"}>
+            <>
                 <Navbar />
                    <Home />
                     <Portfolio />
                     <AboutMe />
                    <Technologies />
                 <Footer />
-            </div>
+            </>
     );
 }
 

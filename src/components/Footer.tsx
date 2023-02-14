@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="grid grid-flow-col gap-4">
           <a className="link link-hover">
             <LinkedInIcon
-              className={`fill-gray-300 hover:fill-white`}
+              className={`fill-current hover:fill-white`}
               onClick={() => window.open("https://github.com/diegogarciacs")}
             ></LinkedInIcon>
           </a>
           <a className="link link-hover">
             <GithubIcon
-              className={`fill-gray-300 hover:fill-white`}
+              className={`fill-current hover:fill-white`}
               onClick={() => window.open("https://github.com/diegogarciacs")}
             ></GithubIcon>
           </a>

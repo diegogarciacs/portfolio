@@ -1,12 +1,19 @@
 
 .gradient-text {
     color: transparent;
-    background: conic-gradient(#1fd65f 12%,#44e47c 12%,#44e47c 33%,#1f95d6 33%,#1f95d6 55%,#d61f96 40%,#d61f96 80%,#1fd6bb 70%,#1fd6bb 87%,#17e882 87%);
+    background: conic-gradient(
+    from 309deg,
+            #1fd65f 12%,
+            #1f95d6  12%, #1f95d6 33%,
+            #d61f96 33%, #d61f96 55%,
+            #1fd6bb 55%, #1fd6bb 70%,
+            #17e882 70%, #17e882 87%,
+            #1fd65f 87%);
     background-size: 50%;
     background-clip: text;
     -webkit-background-clip: text;
 
-    animation: expand-rev 0.5s ease forwards;
+    animation: rotate 15s linear infinite, expand-rev 0.5s ease forwards;
 
     cursor: default;
 }
@@ -86,15 +93,15 @@
         background-position: -1em 1em;
     }
     100% {
-        background-size: 570%;
-        background-position: -8.8em -4em;
+        background-size: 680%;
+        background-position: -8.8em 2em;
     }
 }
 
 @keyframes expand-rev {
     0% {
         background-size: 325%;
-        background-position: -10em -4em;
+        background-position: -12em -4em;
     }
     20% {
         background-size: 55%;

@@ -8,7 +8,7 @@ import {
 } from "./Icons";
 
 export default function Technologies() {
-  const people = [
+  const techList = [
     {
       name: "React",
       description:
@@ -62,20 +62,20 @@ export default function Technologies() {
         <h1>Technologies I enjoy.</h1>
       </div>
       <div className=" grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {people.map((person) => (
+        {techList.map((tech) => (
           <div
-            key={person.name}
-            className="relative flex items-center justify-center space-x-3 rounded-lg bg-base-100
+            key={tech.name}
+            className="relative flex items-center justify-center space-x-3 rounded-lg bg-base-100 shadow-xl hover:bg-base-content/5
             px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400
             sm:flex-row"
           >
             <div className="flex h-10 w-10 flex-shrink-0  items-center justify-center rounded-full align-middle sm:w-12">
-              <person.technologyIcon />
+              <tech.technologyIcon />
             </div>
             <div className="min-w-0 flex-1">
               <span className="absolute inset-0" aria-hidden="true" />
-              <p className="font-medium text-sm">{person.name}</p>
-              <p className=" base-text text-sm">{person.description}</p>
+              <p className="font-medium text-sm">{tech.name}</p>
+              <p className=" base-text text-sm">{tech.description}</p>
             </div>
           </div>
         ))}
