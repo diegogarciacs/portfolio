@@ -49,6 +49,7 @@ const AboutMe = () => {
             <a
               href="https://www.libertymutual.com/"
               target="_blank"
+              rel="noreferrer"
               className="link-hover text-primary hover:text-primary-focus "
             >
               Liberty Mutual Insurance
@@ -57,6 +58,7 @@ const AboutMe = () => {
             <a
               href="https://beachhacks.com"
               target="_blank"
+              rel="noreferrer"
               className="link-hover text-primary hover:text-primary-focus"
             >
               BeachHacks 2023
