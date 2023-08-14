@@ -6,7 +6,7 @@ import {
   ReactIcon,
   NodeJSIcon,
   ExpressIcon,
-  GrommetIcon,
+  GrommetIcon, BlazorIcon, CSharpIcon, MudBlazorIcon,
 } from "../components/Icons";
 
 interface CardData {
@@ -46,11 +46,31 @@ const cardData: CardData[] = [
     isPrivate: false,
   },
   {
+    id: 0,
+    title: "Liberty Mutual Insurance TechStart Internship 2023",
+    content:
+        "Web application built with Blazor that displayed all virtual machines provisioned via Azure in table format. " +
+        "Allowed for group actions to VDEs such as emailing, deleting, pausing, running scripts, and viewing logs.",
+    image: "",
+    link: "https://www.libertymutual.com",
+    svgImages: [
+      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
+        <BlazorIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
+      </div>,
+      <div className="flex place-items-center justify-center rounded-md h-auto w-12 md:h-[40px] md:w-[40px]">
+        <CSharpIcon className="h-8 w-12 fill-gray-300 md:h-auto md:w-8" />
+      </div>,
+      <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
+        <MudBlazorIcon className="h-auto w-12 fill-gray-300  md:w-8" />
+      </div>,
+    ],
+    isPrivate: true,
+  },
+  {
     id: 2,
     title: "BeachHacks 2023",
     content:
-      "A primary web developer for the BeachHacks 2023 website. Responsible for the sponsor page web and mobile" +
-      " form. Assisted with many other sections and components with a focus on functionality and responsiveness." +
+      "A primary web developer for the BeachHacks 2023 website. A focus on functionality and responsiveness." +
       " The website is" +
       " built with CSS, and TypeScript, and React.",
     image: "https://i.imgur.com/example.jpg",

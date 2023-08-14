@@ -28,10 +28,10 @@ const AboutMe = () => {
 
   return (
     <section
-      className="align mx-auto flex min-h-[50rem] w-3/4 flex-col content-center items-center justify-center bg-neutral pt-12"
+      className="align mx-auto flex min-h-[50rem] w-3/4 flex-col content-center items-center justify-center bg-neutral pt-12 scroll-smooth"
       id="about-me"
     >
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col xl:flex-row">
         <h1 className="font-bold antialiased text-4xl sm:whitespace-nowrap sm:text-6xl	">
           More About Me
         </h1>
@@ -41,10 +41,9 @@ const AboutMe = () => {
             className="about-text py-6 antialiased transition-transform text-2xl lg:text-3xl"
             ref={aboutTextRef}
           >
-            Hi! My name is Diego. I grew up playing video games and spending
-            lots of time online. As I've aged I've discovered a love for coding
-            and web development. I like to make things beautiful and functional
-            for all devices. <br /> So far, I've had the pleasure of interning
+            Hello, my name is Diego. I'm an tech enthusiast who's evolved from a childhood of gaming and online
+            exploration into a developer with a knack for design.
+            I like to make things beautiful and functional. <br /> So far, I've had the pleasure of interning twice
             with{" "}
             <a
               href="https://www.libertymutual.com/"
@@ -52,9 +51,10 @@ const AboutMe = () => {
               rel="noreferrer"
               className="link-hover text-primary hover:text-primary-focus "
             >
-              Liberty Mutual Insurance
+              Liberty Mutual Insurance.
             </a>
-            , later building a site with{" "}
+            {" "}I've also dedicated time to work
+            with a team of developers to build{" "}
             <a
               href="https://beachhacks.com"
               target="_blank"

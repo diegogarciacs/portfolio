@@ -15,7 +15,7 @@ const CardComponent = ({
   svgImages,
   isPrivate,
 }: Card) => (
-  <div className="card m-5 min-h-max w-auto bg-base-100 shadow-xl hover:bg-base-content/5 sm:h-96 sm:w-96 ">
+  <div className="card m-5 min-h-max w-auto bg-base-100 shadow-xl  sm:h-96 sm:w-96 ">
     <div className="card-body">
       <h2 className="card-title text-2xl	">{title}</h2>
       <p className="text-base">{content}</p>

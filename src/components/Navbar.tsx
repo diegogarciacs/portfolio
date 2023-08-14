@@ -1,15 +1,20 @@
 import {useEffect, useState} from "react";
 
 export default function Navbar() {
-  const [theme, setTheme] = useState('forest');
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "light");
+  // const [theme, setTheme] = useState('forest');
   useEffect(() => {
-    const htmlElement = document.querySelector('html');
-    if (htmlElement) {
-      htmlElement.setAttribute('data-theme', theme);
-    }
+    localStorage.setItem('theme', theme!)
+    const localTheme = localStorage.getItem('theme')
+    document.querySelector('html')?.setAttribute('data-theme', localTheme!)
   }, [theme]);
-  const toggleTheme = () => {
-    setTheme(theme === 'forest' ? 'acid' : 'forest');
+
+  const toggleTheme = (e:any) => {
+    if (e.target.checked) {
+      setTheme('acid');
+    } else {
+      setTheme('forest');
+    }
   };
 
 
