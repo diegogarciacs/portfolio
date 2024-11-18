@@ -6,18 +6,16 @@ import Technologies from "./components/Technologies";
 import AboutMe from "./pages/AboutMe";
 
 function App() {
-
-
-    return (
-            <>
-                <Navbar />
-                   <Home />
-                    <Portfolio />
-                    <AboutMe />
-                   <Technologies />
-                <Footer />
-            </>
-    );
+  return (
+    <>
+      <Navbar />
+      <Home />
+      <Portfolio />
+      <AboutMe />
+      <Technologies />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

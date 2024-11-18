@@ -1,120 +1,123 @@
-
 .gradient-text {
-    color: transparent;
-    background: conic-gradient(
+  color: transparent;
+  background: conic-gradient(
     from 309deg,
-            #1fd65f 12%,
-            #1f95d6  12%, #1f95d6 33%,
-            #d61f96 33%, #d61f96 55%,
-            #1fd6bb 55%, #1fd6bb 70%,
-            #17e882 70%, #17e882 87%,
-            #1fd65f 87%);
-    background-size: 50%;
-    background-clip: text;
-    -webkit-background-clip: text;
+    #1fd65f 12%,
+    #1f95d6 12%,
+    #1f95d6 33%,
+    #d61f96 33%,
+    #d61f96 55%,
+    #1fd6bb 55%,
+    #1fd6bb 70%,
+    #17e882 70%,
+    #17e882 87%,
+    #1fd65f 87%
+  );
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
 
-    animation: rotate 15s linear infinite, expand-rev 0.5s ease forwards;
+  animation: rotate 15s linear infinite, expand-rev 0.5s ease forwards;
 
-    cursor: default;
+  cursor: default;
 }
 
 .gradient-text:hover {
-    animation: expand 0.5s ease forwards;
+  animation: expand 0.5s ease forwards;
 }
 
 .person_circle {
-    background: conic-gradient(
-            from 293deg,
-            #1FD65F 12%,
-            #1FD6BB 12%, #1FD6BB 33%,
-            #1F95D6 33%, #1F95D6 55%,
-            #D61F96 55%, #D61F96 70%,
-            #1FD6BB 70%, #1FD6BB 87%,
-            #17E882 87%
-    );
-    animation: rotate 15s linear infinite, expand-rev2 .5s ease forwards;
+  background: conic-gradient(
+    from 293deg,
+    #1fd65f 12%,
+    #1fd6bb 12%,
+    #1fd6bb 33%,
+    #1f95d6 33%,
+    #1f95d6 55%,
+    #d61f96 55%,
+    #d61f96 70%,
+    #1fd6bb 70%,
+    #1fd6bb 87%,
+    #17e882 87%
+  );
+  animation: rotate 15s linear infinite, expand-rev2 0.5s ease forwards;
 
-    cursor: default;
-    background-size: 50%;
+  cursor: default;
+  background-size: 50%;
 }
 
-
 @keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .person_circle:hover {
-    animation: expand2 .5s ease forwards, rotate 15s linear infinite;
-
+  animation: expand2 0.5s ease forwards, rotate 15s linear infinite;
 }
 
 @keyframes expand2 {
-    0% {
-        background-size: 50%;
-        background-position: 0 0;
-    }
-    20% {
-        background-size: 55%;
-        background-position: 0 -10em;
-    }
-    100% {
-        background-size: 90%;
-        background-position: -8rem -20rem;
-
-    }
-
-
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 -10em;
+  }
+  100% {
+    background-size: 90%;
+    background-position: -8rem -20rem;
+  }
 }
 
 @keyframes expand-rev2 {
-    0% {
-        background-size: 90%;
-        background-position: -8rem -20rem;
-    }
-    20% {
-        background-size: 55%;
-        background-position: 0 -10em;
-    }
-    100% {
-        background-size: 50%;
-        background-position: 0 0;
-    }
+  0% {
+    background-size: 90%;
+    background-position: -8rem -20rem;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 -10em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
 }
 
 @keyframes expand {
-    0% {
-        background-size: 50%;
-        background-position: 0 0;
-    }
-    20% {
-        background-size: 55%;
-        background-position: -1em 1em;
-    }
-    100% {
-        background-size: 680%;
-        background-position: -8.8em 2em;
-    }
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 55%;
+    background-position: -1em 1em;
+  }
+  100% {
+    background-size: 680%;
+    background-position: -8.8em 2em;
+  }
 }
 
 @keyframes expand-rev {
-    0% {
-        background-size: 325%;
-        background-position: -12em -4em;
-    }
-    20% {
-        background-size: 55%;
-        background-position: 0 1em;
-    }
-    100% {
-        background-size: 50%;
-        background-position: 0 0;
-    }
+  0% {
+    background-size: 325%;
+    background-position: -12em -4em;
+  }
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
 }
 .person_container {
-    clip-path: path(
-            "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 0,400 V 10 H 200 390 Z"
-    );
-    position: relative;
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 0,400 V 10 H 200 390 Z"
+  );
+  position: relative;
 }

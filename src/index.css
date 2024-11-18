@@ -2,18 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    @apply bg-neutral;
+  @apply bg-neutral;
 }
 
 :root {
-    --transform-speed: 250ms;
+  --transform-speed: 250ms;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 section {
-    scroll-margin-top: 4rem;
+  scroll-margin-top: 4rem;
 }

@@ -6,7 +6,10 @@ import {
   ReactIcon,
   NodeJSIcon,
   ExpressIcon,
-  GrommetIcon, BlazorIcon, CSharpIcon, MudBlazorIcon,
+  GrommetIcon,
+  BlazorIcon,
+  CSharpIcon,
+  MudBlazorIcon,
 } from "../components/Icons";
 
 interface CardData {
@@ -32,7 +35,7 @@ const cardData: CardData[] = [
       <div
         className={"flex place-items-center justify-center  md:h-10 md:w-10"}
       >
-        {<TypescriptIcon className="w-10 fill-[gray-300] rounded" />}
+        {<TypescriptIcon className="w-10 rounded fill-[gray-300]" />}
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
@@ -49,15 +52,15 @@ const cardData: CardData[] = [
     id: 0,
     title: "Liberty Mutual Insurance TechStart Internship 2023",
     content:
-        "Web application built with Blazor that displayed all virtual machines provisioned via Azure in table format. " +
-        "Allowed for group actions to VDEs such as emailing, deleting, pausing, running scripts, and viewing logs.",
+      "Web application built with Blazor that displayed all virtual machines provisioned via Azure in table format. " +
+      "Allowed for group actions to VDEs such as emailing, deleting, pausing, running scripts, and viewing logs.",
     image: "",
     link: "https://www.libertymutual.com",
     svgImages: [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <BlazorIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center rounded-md h-auto w-12 md:h-[40px] md:w-[40px]">
+      <div className="flex h-auto w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <CSharpIcon className="h-8 w-12 fill-gray-300 md:h-auto md:w-8" />
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
@@ -77,14 +80,14 @@ const cardData: CardData[] = [
     link: "https://beachhacks.com",
     svgImages: [
       <div
-          className={"flex place-items-center justify-center  md:h-10 md:w-10"}
+        className={"flex place-items-center justify-center  md:h-10 md:w-10"}
       >
-        {<TypescriptIcon className="w-10 fill-[gray-300] rounded" />}
+        {<TypescriptIcon className="w-10 rounded fill-[gray-300]" />}
       </div>,
       <div
-          className={
-            "flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]"
-          }
+        className={
+          "flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]"
+        }
       >
         {<CSSIcon className="w-10 fill-[gray-300] md:h-12 md:w-12" />}
       </div>,
@@ -106,7 +109,7 @@ const cardData: CardData[] = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center rounded-md h-auto w-12 md:h-[40px] md:w-[40px]">
+      <div className="flex h-auto w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ExpressIcon className="h-8 w-12 fill-gray-300 md:h-auto md:w-8" />
       </div>,
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
@@ -127,7 +130,7 @@ const cardData: CardData[] = [
       <div className="flex place-items-center justify-center rounded-md md:h-[40px] md:w-[40px]">
         <ReactIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
-      <div className="flex place-items-center justify-center h-auto w-12 md:h-[40px] md:w-[40px]">
+      <div className="flex h-auto w-12 place-items-center justify-center md:h-[40px] md:w-[40px]">
         <GrommetIcon className="flex w-12 place-items-center justify-center rounded-md md:h-[40px] md:w-8 md:w-[40px]" />
       </div>,
     ],

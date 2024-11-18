@@ -6,12 +6,22 @@ export default function Footer() {
     <footer className="footer footer-center rounded bg-base-300 p-10 text-base-content">
       <div>
         <div className="grid grid-flow-col gap-4">
-          <a className="link link-hover" href="https://www.linkedin.com/in/diegogarciacs/" target="_blank" rel="noreferrer">
+          <a
+            className="link link-hover"
+            href="https://www.linkedin.com/in/diegogarciacs/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedInIcon
               className={`fill-current hover:fill-white`}
             ></LinkedInIcon>
           </a>
-          <a className="link link-hover " href="https://github.com/diegogarciacs" target="_blank" rel="noreferrer">
+          <a
+            className="link link-hover "
+            href="https://github.com/diegogarciacs"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GithubIcon
               className={`fill-current hover:fill-white`}
             ></GithubIcon>
