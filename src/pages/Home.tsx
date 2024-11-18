@@ -29,7 +29,7 @@ export default function Home() {
               Garcia
             </h1>
             <p className="py-6 text-2xl lg:text-3xl">
-              Hi! I'm a software engineer based in California who loves creating
+              Hi! I'm a software engineer based in Seattle, Washington who loves creating
               visually appealing, user-friendly, and efficient
               websites/applications.
             </p>

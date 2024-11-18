@@ -43,7 +43,7 @@ const AboutMe = () => {
           >
             Hello, my name is Diego. I'm an tech enthusiast who's evolved from a childhood of gaming and online
             exploration into a developer with a knack for design.
-            I like to make things beautiful and functional. <br /> So far, I've had the pleasure of interning twice
+            I like to make things beautiful and functional. <br /> So far, I've had the pleasure of working as a software engineer
             with{" "}
             <a
               href="https://www.libertymutual.com/"
@@ -64,7 +64,7 @@ const AboutMe = () => {
               BeachHacks 2023
             </a>
             , and finally building my own portfolio.
-            <br /> My goal is to become a full-stack developer and continue to
+            <br /> My goal is to continue to
             work on projects that I'm passionate about.
           </p>
         </div>
